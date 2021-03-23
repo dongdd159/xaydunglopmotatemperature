@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temperature = function (temp){
+        this.temp = temp
+        this.ctof = function (){
+            return this.temp *1.8 +32
+        }
+        this.ctokenvin = function (){
+            return this.temp +273.15
+        }
+    }
+    let tempo = new temperature(25)
+    let fahrenheit = tempo.ctof()
+    let kenvin = tempo.ctokenvin()
+    alert(fahrenheit)
+    alert(kenvin)
+</script>
+</body>
+</html>
